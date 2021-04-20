@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.ExistenteController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/8.-REPORTE-VISUAL.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="399.0" layoutY="324.0" prefHeight="159.0" prefWidth="481.0" text="INFORMACION YA EXISTENTE..." textFill="WHITE">
+         <font>
+            <Font name="Impact" size="42.0" />
+         </font>
+      </Label>
+      <Button layoutX="110.0" layoutY="585.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="66.0" prefWidth="318.0" styleClass="main-button" stylesheets="@css/estilos.css" text="REGRESAR A CONFIGURACIONES" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.AgregarparaleloController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/8.-REPORTE-VISUAL.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="526.0" layoutY="105.0" text="AGREGAR PARALELO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvTerminos" layoutX="50.0" layoutY="241.0" onMouseClicked="#seleccionTermino" prefHeight="302.0" prefWidth="378.0" />
+      <ListView fx:id="lvMaterias" layoutX="467.0" layoutY="241.0" onMouseClicked="#seleccionMat" prefHeight="302.0" prefWidth="378.0" />
+      <Label layoutX="166.0" layoutY="163.0" text="LISTA TÉRMINOS" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="584.0" layoutY="163.0" text="LISTA MATERIAS" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="897.0" layoutY="233.0" prefHeight="175.0" prefWidth="330.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="225.7999267578125" minWidth="10.0" prefWidth="188.8000244140625" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.199951171875" minWidth="10.0" prefWidth="142.39997558593748" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="34.0" prefWidth="229.0" text="NÚMERO PARALELO:" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtparalelo" styleClass="other-button" stylesheets="@css/estilos.css" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="1036.0" layoutY="433.0" mnemonicParsing="false" onAction="#abrirDialogo" styleClass="main-button" stylesheets="@css/estilos.css" text="AGREGAR" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="88.0" layoutY="624.0" mnemonicParsing="false" onAction="#switchMateria" styleClass="main-button" stylesheets="@css/estilos.css" text="REGRESAR" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

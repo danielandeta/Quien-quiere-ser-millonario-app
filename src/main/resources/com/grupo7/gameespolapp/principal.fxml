@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.PrincipalController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/INTERFAZ-1-HD.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="466.0" layoutY="340.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="48.0" prefWidth="347.0" styleClass="main-button" stylesheets="@css/estilos.css" text="CONFIGURACIONES">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="466.0" layoutY="419.0" mnemonicParsing="false" onAction="#switchNuevojuego" prefHeight="48.0" prefWidth="347.0" styleClass="main-button" stylesheets="@css/estilos.css" text="NUEVO JUEGO">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="466.0" layoutY="494.0" mnemonicParsing="false" onAction="#switchReporte" prefHeight="48.0" prefWidth="347.0" styleClass="main-button" stylesheets="@css/estilos.css" text="REPORTE">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="466.0" layoutY="571.0" mnemonicParsing="false" onAction="#salir" prefHeight="48.0" prefWidth="347.0" styleClass="main-button" stylesheets="@css/estilos.css" text="SALIR">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

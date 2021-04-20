@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.EliminarparaleloController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/8.-REPORTE-VISUAL.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="525.0" layoutY="95.0" text="ELIMINAR PARALELO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvParalelos" layoutX="441.0" layoutY="170.0" onMouseClicked="#seleccionarParalelo" prefHeight="379.0" prefWidth="397.0" />
+      <Button layoutX="523.0" layoutY="610.0" mnemonicParsing="false" onAction="#eliminarParalelo" styleClass="main-button" stylesheets="@css/estilos.css" text="ELIMINAR" textFill="#fffbfb">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="640.0" layoutY="610.0" mnemonicParsing="false" onAction="#switchMateria" styleClass="main-button" stylesheets="@css/estilos.css" text="CANCELAR" textFill="#fffbfb">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

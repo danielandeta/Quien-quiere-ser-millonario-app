@@ -1,0 +1,42 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Jul 31, 2019, 5:53:17 PM
+    Author     : Gladys
+
+*/
+
+.main-button {
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.bodybg{
+    -fx-background-image:url("/src/main/resources/imagenes/INTERFAZ-1-HD.jpg");
+    -fx-background-size: 1280% 720%;
+}
+
+.write-button{
+    -fx-text-fill:white;
+    -fx-text-size: 23px;
+}
+
+.other-button {
+    -fx-border-color: white;
+    -fx-border-width: 2;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+
+
+
+
+
