@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.PreguntasController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/6.-PREGUNTAS.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="437.0" layoutY="224.0" mnemonicParsing="false" onAction="#switchvisualizar" prefHeight="62.0" prefWidth="406.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Visualizar " textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchAgregar" prefHeight="62.0" prefWidth="406.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Agregar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchEliminar" prefHeight="62.0" prefWidth="406.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Eliminar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="437.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="62.0" prefWidth="406.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Atrás" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

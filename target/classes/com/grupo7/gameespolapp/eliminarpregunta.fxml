@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.EliminarpreguntaController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/8.-REPORTE-VISUAL.jpg" />
+         </image>
+      </ImageView>
+      <ListView fx:id="lvMaterias" layoutX="82.0" layoutY="245.0" onMouseClicked="#seleccionPar" prefHeight="200.0" prefWidth="200.0" />
+      <Label layoutX="513.0" layoutY="106.0" text="ELIMINAR PREGUNTAS" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="188.0" text="Seleccione materia" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvPreguntas" layoutX="358.0" layoutY="236.0" onMouseClicked="#seleccionarpreg" prefHeight="392.0" prefWidth="795.0" />
+      <Label layoutX="358.0" layoutY="188.0" text="Seleccione la pregunta que desea eliminar" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="38.0" layoutY="654.0" mnemonicParsing="false" onAction="#switchConf" styleClass="main-button" stylesheets="@css/estilos.css" text="REGRESAR A CONFIGURACIONES" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="650.0" layoutY="654.0" mnemonicParsing="false" onAction="#eliminarPreg" styleClass="main-button" stylesheets="@css/estilos.css" text="ELIMINAR" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

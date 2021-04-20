@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.NuevojuegoController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/8.-REPORTE-VISUAL.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="563.0" layoutY="78.0" text="NUEVO JUEGO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="30.0" />
+         </font>
+      </Label>
+      <ListView fx:id="lvMaterias" layoutX="81.0" layoutY="211.0" onMouseClicked="#seleccionMateria" prefHeight="290.0" prefWidth="224.0" />
+      <ListView fx:id="lvParalelos" layoutX="362.0" layoutY="211.0" onMouseClicked="#seleccionParalelo" prefHeight="290.0" prefWidth="224.0" />
+      <GridPane layoutX="650.0" layoutY="211.0" prefHeight="408.0" prefWidth="542.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="327.79998779296875" minWidth="10.0" prefWidth="283.79998779296875" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="263.0" minWidth="10.0" prefWidth="258.20001220703125" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="COD DE PARTICIPANTE:" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </Label>
+            <Label text="COD DE COMPAÑERO DE APOYO:" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </Label>
+            <Label text="NUM DE PREGUNTAS POR NIVEL:" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cod_participante" styleClass="other-button" stylesheets="@css/estilos.css" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="numxnivel" styleClass="other-button" stylesheets="@css/estilos.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Impact" size="23.0" />
+               </font>
+            </TextField>
+            <MenuButton fx:id="compapoyo" mnemonicParsing="false" prefHeight="55.0" prefWidth="258.0" text="Seleccione cod de apoyo" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+               <font>
+                  <Font name="Impact" size="18.0" />
+               </font>
+            </MenuButton>
+         </children>
+      </GridPane>
+      <Button layoutX="841.0" layoutY="619.0" mnemonicParsing="false" onAction="#switchToIniciar" styleClass="main-button" stylesheets="@css/estilos.css" text="INICIAR JUEGO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="43.0" layoutY="619.0" mnemonicParsing="false" onAction="#switchToPrimary" styleClass="main-button" stylesheets="@css/estilos.css" text="REGRESAR" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Label layoutX="78.0" layoutY="154.0" text="SELECCIONE UNA MATERIA" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="358.0" layoutY="154.0" text="SELECCIONE UN PARALELO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Label>
+      <Button layoutX="650.0" layoutY="146.0" mnemonicParsing="false" onAction="#getRandomEstudiantes" styleClass="main-button" stylesheets="@css/estilos.css" text="CLIC AQUÍ - ALEATORIO" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="23.0" />
+         </font>
+      </Button>
+      <Label fx:id="idaleatorio" layoutX="1002.0" layoutY="154.0" prefHeight="24.0" prefWidth="181.0" styleClass="other-button" stylesheets="@css/estilos.css" textFill="WHITE">
+         <font>
+            <Font name="Impact" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

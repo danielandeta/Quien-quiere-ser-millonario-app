@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.grupo7.gameespolapp.TerminoController">
+   <children>
+      <ImageView fitHeight="720.0" fitWidth="1280.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../imagenes/3.-TERMINOS-ACADEMICOS.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="439.0" layoutY="225.0" mnemonicParsing="false" onAction="#switchEditarTermino" prefHeight="61.0" prefWidth="403.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Ingresar término">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="439.0" layoutY="329.0" mnemonicParsing="false" onAction="#switchEditar1" prefHeight="61.0" prefWidth="403.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Editar término">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="439.0" layoutY="430.0" mnemonicParsing="false" onAction="#switchconfgterm" prefHeight="61.0" prefWidth="403.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Configurar término ">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+      <Button layoutX="439.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToSecondary" prefHeight="61.0" prefWidth="403.0" styleClass="main-button" stylesheets="@css/estilos.css" text="Atrás">
+         <font>
+            <Font name="Impact" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
